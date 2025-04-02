@@ -26,4 +26,9 @@ links and adds the domains contained on those links to the 'domains' var.
 Finally it makes both an A-record and AAAA query for each domain on the 
 resulting domain list.  It sleeps for 2 seconds between each query to not 
 hammer the resolver too hard, and spread the queries over time.
+ 
+#### Systemd
 
+It takes about 25 minutes to run given the delays between queries.  I run it
+automatically every 60 minutes using a systemd timer.  The unit files for the 
+service and timer I used can be found in the systemd directory.

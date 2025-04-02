@@ -1,5 +1,5 @@
 [Unit]
-Description=Prime Pi DNS Cache by Requesting top 500 websites
+Description=Prime DNS Cache by Requesting top 500 websites
 
 [Service]
 Type=simple
