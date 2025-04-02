@@ -1,0 +1,11 @@
+[Unit]
+Description=Grab top 500 websites to keep DNS cache warm.
+Requires=dnscache.service
+
+[Timer]
+OnBootSec=20min
+OnUnitActiveSec=1h
+Unit=dnscache.service
+
+[Install]
+WantedBy=timers.target

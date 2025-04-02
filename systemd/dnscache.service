@@ -1,0 +1,11 @@
+[Unit]
+Description=Prime Pi DNS Cache by Requesting top 500 websites
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/prime_dns_cache.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
