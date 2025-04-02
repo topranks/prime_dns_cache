@@ -1,7 +1,8 @@
 ## Prime DNS Cache
 
-This is a simple script I run to attempt to keep my DNS recursive resolve cache
-warm, given there are not many users behind it.
+This is a simple script I run to attempt to keep my DNS recursive resolver cache
+warm, given there are not many users behind it.  It is not a magic bullet but 
+it definitely helps compared to not having it.
 
 #### Dependencies
 
