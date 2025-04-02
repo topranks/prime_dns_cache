@@ -15,8 +15,8 @@ sudo apt install python3-dnspython python3-bs4
 
 It has a few inputs:
 
-- A manual list of sites defined as the 'mysites' var
-- A manual list of domains defined in the 'domains' var when itialised
+- A manual list of sites defined in the 'mysites' var
+- A manual list of domains defined in the 'domains' var
 - A CSV file downloaded from moz.com with the top 500 websites
 
 For the sites in the manual list and the top 500 CSV it makes a connection to 
