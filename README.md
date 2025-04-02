@@ -6,7 +6,7 @@ it definitely helps compared to not having it.
 
 #### Dependencies
 
-It is a Python3 script that relies on dnspython and BeautifulSoup, to 
+It is a Python3 script that relies on dnspython and BeautifulSoup4, to 
 install on debian you can:
 ```
 sudo apt install python3-dnspython python3-bs4
