@@ -18,10 +18,13 @@ It has a few inputs:
 - A manual list of sites defined in the 'mysites' var
 - A manual list of domains defined in the 'domains' var
 - A CSV file downloaded from moz.com with the top 500 websites
+- A manual list of top-level-domains to ignore defined in the 'ignore_tlds' var
 
 For the sites in the manual list and the top 500 CSV it makes a connection to 
-each over HTTP, and gets the resulting HTML.  It then parses the HTML for any 
-links and adds the domains contained on those links to the 'domains' var.
+each over HTTP, and gets the resulting HTML.  If a domain in the top 500 list 
+is under a top-level domain from 'ignore_tlds' it skips it, however.  For pages 
+downloaded, it parses the HTML looking for links, and adds any domains in those 
+links to the 'domains' list.
 
 Finally it makes both an A-record and AAAA query for each domain on the 
 resulting domain list.  It sleeps for 2 seconds between each query to not 
